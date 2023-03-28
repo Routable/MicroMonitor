@@ -19,3 +19,9 @@ The use case for this is basic monitoring of my home bench server for quick trou
 curiosity.
 
 This software is provided AS-IS, and users accept all liability of its use.
+
+# Instructions
+## Requirements: Flask, or a virtualenv with Flask, and Python3. 
+1. Once Flask is present on the system, the application can be run via python3 app.py (flask run will run the application on 127.0.0.1:19999, instead of 0.0.0.0:19999 making it inaccessible from other devices)
+2. Once it is running, access the application via <ip-of-server>:19999
+3. To run in a detached setting, you can use the command nohup python3 app.py & to have all output go to nohup.out, and effectively run it in a detached setting. This should only be used in a non-production environment, in a local environment.
